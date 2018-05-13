@@ -1,0 +1,50 @@
+	index:
+
+1) formulaire d'adhésion
+
+Informations
+
+Date de naissance
+	=> traitement en fct de la date machine
+jeux
+mail
+ville / code postal
+Montant cotisation
+enregistrer date dernière cotisation
+
+sauvegarde dans bdd
+
+prévisions de cout
+
+
+	BDD
+
+Joueur:
+-Id (1)
+-Line up (0 -> N)
+-Jeux?
+-Lan (0 -> N) ?
+
+Line Up:
+-Jeu (1)
+-Lan (0 -> N)
+-Membres (0 -> N)
+-Résultats
+
+Lan
+-Cout (1)
+-Lines Up présente (1 -> N)
+-Lieu (1)
+-Date (1)
+-CashPrize
+-Résultat (par line up)
+	=> Enrée line up + résultat
+
+Couts:
+Type: annuel, mensuel ou exceptionnel
+Sortie  ou rentrée (+ ou -)
+
+=> Probleme : associer plusieurs lan a une line up, et plusieurs line up à une lan
+	=> Formatted String
+	str = '[['line up id', 'resultat'], ...]'
+	str[n][0] = line up, str[n][1] = 
